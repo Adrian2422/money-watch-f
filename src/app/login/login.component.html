@@ -1,0 +1,33 @@
+<div class="login-container">
+	<form nz-form [formGroup]="validateForm" class="login-form" (ngSubmit)="onLogIn()">
+		<h1 class="app-logo">Money Watch</h1>
+		<nz-form-item>
+			<nz-form-control nzErrorTip="{{'LOGIN-PAGE.LOGIN-ERROR' | translate}}">
+				<nz-input-group nzPrefixIcon="user">
+					<input type="text" nz-input formControlName="login" placeholder="{{'LOGIN-PAGE.LOGIN' | translate}}" />
+				</nz-input-group>
+			</nz-form-control>
+		</nz-form-item>
+		<nz-form-item>
+			<nz-form-control nzErrorTip="{{'LOGIN-PAGE.PASSWORD-ERROR' | translate}}">
+				<nz-input-group nzPrefixIcon="lock">
+					<input type="password" nz-input formControlName="password" placeholder="{{'LOGIN-PAGE.PASSWORD' | translate}}" />
+				</nz-input-group>
+			</nz-form-control>
+		</nz-form-item>
+		<div nz-row class="login-form-margin">
+			<div nz-col [nzSpan]="12">
+				<label nz-checkbox formControlName="remember">
+					<span>{{'LOGIN-PAGE.REMEMBER-ME' | translate}}</span>
+				</label>
+			</div>
+			<div nz-col [nzSpan]="12">
+				<a class="login-form-forgot">{{'LOGIN-PAGE.FORGOT-PASSWORD' | translate}}</a>
+			</div>
+		</div>
+		<div class="login-form__button-group">
+			<button nz-button class="login-form-button login-form-margin" [nzType]="'primary'">{{'LOGIN-PAGE.LOG-IN' | translate}}</button>
+			<span>{{'LOGIN-PAGE.OR' | translate}} <a>{{'LOGIN-PAGE.REGISTER-NOW' | translate}}</a></span>
+		</div>
+	</form>
+</div>

@@ -1,0 +1,38 @@
+@import 'src/assets/scss/variables';
+
+.container {
+	height: 100vh;
+	position: relative;
+}
+
+.app-logo {
+	font-family: 'Baloo 2', cursive;
+	font-size: 3rem;
+	color: $primary-color;
+}
+
+.login-form {
+	display: flex;
+	flex-flow: column nowrap;
+	text-align: center;
+	width: 300px;
+	height: fit-content;
+	overflow: auto;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+
+	&-margin {
+		margin-bottom: 16px;
+	}
+
+	&__button-group {
+		display: flex;
+		flex-flow: column nowrap;
+	}
+}
+
+

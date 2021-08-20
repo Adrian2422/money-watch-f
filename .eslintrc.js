@@ -4,10 +4,7 @@ module.exports = {
 		es2021: true,
 		node: true
 	},
-	extends: [
-		'eslint:recommended',
-		'plugin:@typescript-eslint/recommended'
-	],
+	extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended'],
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
 		ecmaVersion: 2021,
@@ -15,22 +12,10 @@ module.exports = {
 	},
 	plugins: ['@typescript-eslint'],
 	rules: {
-		indent: [
-			'warn',
-			'tab'
-		],
-		'linebreak-style': [
-			'warn',
-			'unix'
-		],
-		quotes: [
-			'warn',
-			'single'
-		],
-		semi: [
-			'warn',
-			'always'
-		],
+		indent: ['warn', 'tab'],
+		'linebreak-style': ['warn', 'unix'],
+		quotes: ['warn', 'single'],
+		semi: ['warn', 'always'],
 		'getter-return': 'error',
 		'no-console': 'warn',
 		'no-dupe-args': 'warn',
@@ -53,27 +38,17 @@ module.exports = {
 		'no-magic-numbers': 'warn',
 		'no-multi-spaces': 'warn',
 		'no-unused-expressions': 'warn',
-		'init-declarations': [
-			'warn',
-			'never'
-		],
-		'no-unused-vars': 'warn',
+		'init-declarations': ['warn', 'never'],
+		'no-unused-vars': ['warn', { 'args': 'none' }],
 		'array-bracket-newline': 'warn',
 		'array-bracket-spacing': 'warn',
-		'array-element-newline': 'warn',
+		'array-element-newline': ['warn', { 'minItems': 3 }],
 		'comma-spacing': 'warn',
-		'comma-style': [
-			'warn',
-			'last'
-		],
-		'comma-dangle': [
-			'warn',
-			'never'
-		],
+		'comma-style': ['warn', 'last'],
+		'comma-dangle': ['warn', 'never'],
 		'eol-last': 1,
 		'@typescript-eslint/typedef': [
-			'error',
-			{
+			'error', {
 				arrowParameter: true,
 				variableDeclaration: true
 			}
