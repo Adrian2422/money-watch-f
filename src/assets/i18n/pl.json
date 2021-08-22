@@ -1,0 +1,13 @@
+{
+	"LOGIN-PAGE": {
+		"LOGIN": "Login",
+		"LOGIN-ERROR": "Proszę wprowadzić swój login",
+		"PASSWORD": "Hasło",
+		"PASSWORD-ERROR": "Proszę wprowadzić swoje hasło",
+		"REMEMBER-ME": "Zapamiętaj mnie",
+		"FORGOT-PASSWORD": "Przypomnij hasło",
+		"LOG-IN": "Zaloguj",
+		"OR": "Lub",
+		"REGISTER-NOW": "zarejestruj teraz!"
+	}
+}
