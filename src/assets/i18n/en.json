@@ -1,0 +1,13 @@
+{
+	"LOGIN-PAGE": {
+		"LOGIN": "Login",
+		"LOGIN-ERROR": "Please input your username!",
+		"PASSWORD": "Password",
+		"PASSWORD-ERROR": "Please input your Password!",
+		"REMEMBER-ME": "Remember me",
+		"FORGOT-PASSWORD": "Forgot password",
+		"LOG-IN": "Log in",
+		"OR": "Or",
+		"REGISTER-NOW": "register now!"
+	}
+}
