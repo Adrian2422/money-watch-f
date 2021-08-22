@@ -7,10 +7,6 @@ import pl from '@angular/common/locales/pl';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-<<<<<<< HEAD
-import { SharedModule } from '../shared/shared/shared.module';
-import { MainComponent } from './main/main.component';
-=======
 import { LoginComponent } from './login/login.component';
 import {
 	TranslateLoader,
@@ -19,28 +15,22 @@ import {
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from '../shared/shared/shared.module';
->>>>>>> master
+import { MainComponent } from './main/main.component';
 
 registerLocaleData(en);
 registerLocaleData(pl);
 
 @NgModule({
-<<<<<<< HEAD
 	declarations: [
 		AppComponent,
+		LoginComponent,
 		MainComponent
 	],
-=======
-	declarations: [AppComponent, LoginComponent],
->>>>>>> master
 	imports: [
 		BrowserModule,
 		FormsModule,
 		HttpClientModule,
 		BrowserAnimationsModule,
-<<<<<<< HEAD
-		SharedModule
-=======
 		SharedModule,
 		ReactiveFormsModule,
 		TranslateModule.forRoot({
@@ -51,7 +41,6 @@ registerLocaleData(pl);
 			}
 		}),
 		AppRoutingModule
->>>>>>> master
 	],
 	providers: [],
 	bootstrap: [AppComponent]
